@@ -1,30 +1,33 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
 }
 
 #search-container {
   margin-bottom: 20px;
 }
 
-#container {
-  display: flex; /* Use flexbox for layout */
-  gap: 20px; /* Space between the two areas */
-}
-
 #results {
-  border: 1px solid #007bff; /* Blue border for results area */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightblue;
   padding: 10px;
-  height: 150px;
-  overflow-y: auto;
-  background-color: #e7f3ff; /* Light blue background */
-  flex: 1; /* Allow this area to grow */
+  border-radius: 5px;
 }
 
+.actor {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
 #actor-info {
-  border: 1px solid #28a745; /* Green border for actor info area */
+  background-color: rgb(101, 219, 101); /* Adding green background color */
   padding: 10px;
-  height: 150px;
-  background-color: #d4edda; /* Light green background */
-  flex: 1; /* Allow this area to grow */
+  color: rgb(1, 1, 1); /* Optional: change the text color to make it readable */
+}
+
+.actor img {
+  width: 50px;
+  height: 75px;
+  margin-right: 10px;
 }
