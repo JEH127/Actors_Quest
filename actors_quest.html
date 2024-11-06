@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actors Quest</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Actors Quest</h1>
+    <!-- Container for the search input and button -->
+    <div id="search-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Rechercher un acteur..."
+      />
+      <button id="search-button">Rechercher</button>
+    </div>
+    <!-- Container for displaying results and actor information -->
+    <div id="container">
+      <div id="results">
+        Zone résultat : (en bleue) résultats des recherches
+      </div>
+      <div id="actor-info">
+        Zone affichage : (en vert) affichage des informations de l’acteur
+      </div>
+    </div>
+
+    <script>
+      // Add event listener to the search button
+      document
+        .getElementById("search-button")
+        .addEventListener("click", function () {
+          // Get the actor name from the input field
+          const actorName = document.getElementById("search-input").value;
+
+          // Update the results area with the search query
+          document.getElementById(
+            "results"
+          ).innerText = `Résultats pour : ${actorName}`;
+
+          // Here, you would typically call your API to retrieve the actor's data
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#search-container {
+  margin-bottom: 20px;
+}
+
+#container {
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Space between the two areas */
+}
+
+#results {
+  border: 1px solid #007bff; /* Blue border for results area */
+  padding: 10px;
+  height: 150px;
+  overflow-y: auto;
+  background-color: #e7f3ff; /* Light blue background */
+  flex: 1; /* Allow this area to grow */
+}
+
+#actor-info {
+  border: 1px solid #28a745; /* Green border for actor info area */
+  padding: 10px;
+  height: 150px;
+  background-color: #d4edda; /* Light green background */
+  flex: 1; /* Allow this area to grow */
+}
