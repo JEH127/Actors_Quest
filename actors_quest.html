@@ -38,13 +38,13 @@
             .then((response) => response.json())
             .then((data) => {
               const resultsDiv = document.getElementById("results");
-              resultsDiv.innerHTML = ""; // Effacer les résultats précédents
+              resultsDiv.innerHTML = ""; // Clear previous results
               data.results.forEach((actor) => {
                 const actorDiv = document.createElement("div");
                 actorDiv.classList.add("actor");
                 const actorImage = actor.profile_path
                   ? `https://image.tmdb.org/t/p/w200${actor.profile_path}`
-                  : "default-image.png"; // Image par défaut
+                  : "default-image.png"; // Default image
                 actorDiv.innerHTML = `
                   <img src="${actorImage}" alt="${actor.name}" />
                   <p>${actor.name}</p>
