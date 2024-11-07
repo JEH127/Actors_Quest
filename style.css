@@ -20,6 +20,7 @@ body {
   align-items: center;
   margin: 10px;
 }
+
 #actor-info {
   background-color: rgb(101, 219, 101); /* Adding green background color */
   padding: 10px;
@@ -30,4 +31,9 @@ body {
   width: 50px;
   height: 75px;
   margin-right: 10px;
+}
+
+.selected {
+  border: 2px solid blue; /* Example style for the selected actor */
+  background-color: lightblue; /* Background color for the selected actor */
 }
